@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux';
 import logo from './logo.png';
 import ContactsView from './features/contacts/components/ContactsView';
 import Login from './features/auth/Login';
-import './App.css';
+import './App.scss';
 import { user } from './features/auth/auth';
 
 function t (key) {

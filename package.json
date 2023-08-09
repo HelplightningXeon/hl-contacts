@@ -2,6 +2,7 @@
   "name": "helplightning-contacts",
   "version": "0.1.0",
   "private": true,
+  "main": "dist/contacts.js",
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.1",
     "@testing-library/jest-dom": "^5.16.4",
@@ -10,6 +11,7 @@
     "ag-grid-community": "^20.0.0",
     "ag-grid-react": "^20.0.0",
     "axios": "^1.4.0",
+    "css-loader": "^6.8.1",
     "ramda": "^0.29.0",
     "react": "17.0.2",
     "react-bootstrap": "0.33",
@@ -17,11 +19,15 @@
     "react-redux": "^8.0.1",
     "react-scripts": "5.0.1",
     "sass": "^1.64.2",
+    "svg-sprite-loader": "^6.0.11",
+    "svgo": "^2.8.0",
+    "svgo-loader": "^3.0.0",
+    "url-loader": "^4.1.1",
     "web-vitals": "^2.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "webpack --mode production",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -42,5 +48,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "webpack-cli": "^5.1.4"
   }
 }
