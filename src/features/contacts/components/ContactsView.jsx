@@ -42,7 +42,7 @@ class ContactsView extends Component {
   handleSelect = (key) => {
     this.setState({ key })
     const { router } = this.props
-    router.push(`/contacts/${key}`)
+    router?.push(`/contacts/${key}`)
   }
 
   renderDicTab () {

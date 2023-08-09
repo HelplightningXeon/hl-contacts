@@ -6,6 +6,10 @@ import Login from './features/auth/Login';
 import './App.css';
 import { user } from './features/auth/auth';
 
+function t (key) {
+  return key;
+}
+
 function App() {
   const currentUser = useSelector(user);
   return (
@@ -15,7 +19,7 @@ function App() {
         <p>
           Helplightning Contacts
         </p>
-        { currentUser?.token ? <ContactsView currentUser={currentUser} /> : <Login /> }
+        { currentUser?.token ? <ContactsView currentUser={currentUser} t={t} /> : <Login /> }
       </header>
     </div>
   );
