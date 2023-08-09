@@ -1,5 +1,5 @@
 {
-  "name": "helplightning-contacts",
+  "name": "hl-contacts",
   "version": "0.1.0",
   "private": true,
   "main": "dist/contacts.js",
