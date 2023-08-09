@@ -17,7 +17,7 @@ class BaseContactsView extends Component {
     callContact: PropTypes.func.isRequired,
     chatContact: PropTypes.func,
     callGroup: PropTypes.func.isRequired,
-    enterpriseContactVersion: PropTypes.number.isRequired,
+    enterpriseContactVersion: PropTypes.number,
     showModal: PropTypes.func.isRequired,
     sendOTUInvitation: PropTypes.func.isRequired,
     t: PropTypes.func.isRequired

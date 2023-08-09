@@ -19,7 +19,17 @@ function App() {
         <p>
           Helplightning Contacts
         </p>
-        { currentUser?.token ? <ContactsView currentUser={currentUser} t={t} /> : <Login /> }
+        { currentUser?.token ?
+          <ContactsView
+            currentUser={currentUser}
+            callContact={console.log}
+            callGroup={console.log}
+            sendOTUInvitation={console.log}
+            showModal={console.log}
+            t={t}
+          /> :
+          <Login /> 
+        }
       </header>
     </div>
   );

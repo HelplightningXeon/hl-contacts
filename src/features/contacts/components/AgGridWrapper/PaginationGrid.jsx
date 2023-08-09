@@ -5,10 +5,6 @@ import { GetColumn, FrameworkComponents } from './Columns'
 import { isTouchScreenDevice } from './device'
 
 class PaginationGrid extends Component {
-  static contextTypes = {
-    router: PropTypes.object.isRequired
-  }
-
   static propTypes = {
     cache: PropTypes.object,
     context: PropTypes.object,

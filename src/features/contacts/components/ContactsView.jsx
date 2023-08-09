@@ -16,6 +16,7 @@ class ContactsView extends Component {
     showDirectory: PropTypes.bool,
     onInviteUserClick: PropTypes.func,
     callContact: PropTypes.func.isRequired,
+    callGroup: PropTypes.func.isRequired,
     showModal: PropTypes.func.isRequired,
     t: PropTypes.func.isRequired,
     router: PropTypes.object
