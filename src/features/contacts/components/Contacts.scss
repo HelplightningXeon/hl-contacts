@@ -1,0 +1,57 @@
+@import 'variables';
+
+.Contacts {
+  h1 button {
+    margin-left: 10px;
+  }
+
+  hr {
+    border-top: 3px solid #eee;
+  }
+
+  button img {
+    height: 20px;
+  }
+
+  .container-box {
+    padding: 0;
+    border: none;
+
+    .tab-content {
+      padding: 20px;
+      border: 1px solid rgba(33, 37, 41, 0.125);
+
+      .action-btn {
+        font-size: 0.8rem;
+        padding: 4px 8px;
+      }
+    }
+
+    .nav-tabs {
+      i {
+        margin-right: 2px;
+
+        @media(max-width:680px) {
+          margin-right: 0;
+          font-size: 18px;
+        }
+
+        + span {
+          @media(max-width:680px) {
+            display: none;
+          }
+        }
+      }
+      li.active a, li.active i {
+        color: rgb(102, 102, 102);
+      }
+      li a, li i {
+        color: var(--brand-color, $primary-color);
+      }
+    }
+  }
+
+  .grid-wrapper {
+    height: calc(100vh - 290px);
+  }
+}

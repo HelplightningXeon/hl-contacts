@@ -1,0 +1,7 @@
+@import '_branding-vars';
+
+:export {
+  brandColor: $brand-color;
+  brandColorTranslucent: $brand-color-translucent;
+  brandColorLight: $brand-color-light;
+}

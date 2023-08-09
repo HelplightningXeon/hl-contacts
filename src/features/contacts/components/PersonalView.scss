@@ -1,0 +1,57 @@
+.PersonalView {
+  .nameDetailsCell {
+    overflow: visible !important;
+  }
+  .paginationGridRow {
+    @media (hover: hover) {
+      &:hover {
+        .ellipsis-menu-div {
+          display: none;
+        }
+        .buttons-stripe {
+          display: flex;
+          .invite-btn-container {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  .onCallGroupRow {
+    .buttons-container {
+      .message {
+        display: none;
+      }
+      .invite-btn-container {
+        display: none;
+      }
+    }
+  }
+  .can-not-message {
+    .buttons-stripe {
+      .message {
+        display: none;
+      }
+    }
+  }
+  .unreachableRow {
+    cursor:auto;
+    .unreachable {
+      .buttons-stripe {
+        .btn-video, .btn-audioplus {
+          display: none;
+        }
+        .invite-btn-container {
+          display: flex;
+        }
+      }
+    }
+  }
+  .device-license {
+    .buttons-stripe {
+      .invite-btn-container {
+        display: none !important;
+      }
+    }
+  }
+}
