@@ -33,11 +33,11 @@ export const CallSubmenuButtonRenderer = (x) => {
   return (
     <div className="buttons-container">
       <div className="ellipsis-menu-div">
-        <i className="far fa-ellipsis-v fa-lg"></i>
+        <i className="fa fa-ellipsis-v fa-lg"></i>
       </div>
       <div className="buttons-stripe">
         <div className="button btn-video" onClick={handleVideoClick}>
-          <i className="fas fa-video" />
+          <i className="fa fa-video" />
           <span className="icon-label">{'Video'}</span>
         </div>
         <div className="button btn-audioplus" onClick={handleAudioClick}>
@@ -45,11 +45,11 @@ export const CallSubmenuButtonRenderer = (x) => {
           <span className="icon-label audio-plus">{'audio_plus_out_of_call'}</span>
         </div>
           <div className="button message" onClick={handleMessageClick}>
-            <i className="fas fa-comment-lines" />
+            <i class="fa fa-comment-dots"></i>
             <span className="icon-label">{'Message'}</span>
           </div>
         <div className="button invite-btn-container" onClick={handleInviteClick}>
-          <span className="invite-btn"></span>
+            <i class="fa-solid fa-envelope"></i>
           <span className="icon-label">{'Invite'}</span>
         </div>
       </div>
@@ -64,7 +64,7 @@ CallSubmenuButtonRenderer.propTypes = {
 
 export const HlFavoriteIconRenderer = (props) => {
   if (!props.data) { return null }
-  const iconClass = props.value ? 'fas fa-star favoriteIcon star-on' : 'fal fa-star favoriteIcon star-off'
+  const iconClass = props.value ? 'fa fa-star favoriteIcon star-on' : 'fa fa-star favoriteIcon star-off'
   return (
     <div
       onClick={(e) => (
@@ -107,7 +107,7 @@ export const AvatarImageRenderer = (props) => {
   }
   // format default differently for groups/personas
   if ('user_count' in data) {
-    avatarHtml = <i className="fal fa-circle" style={{ ...style }} />
+    avatarHtml = <i className="fa fa-circle" style={{ ...style }} />
   }
   const url = data.avatar.url || data.avatar.thumb
   if (url) {

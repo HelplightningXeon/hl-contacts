@@ -49,7 +49,7 @@ class ContactsView extends Component {
   renderDicTab () {
     const { t, showDirectory } = this.props
     return showDirectory && (
-      <Tab eventKey={'directory'} title={<div><i className="fal fa-address-book" /> <span>{t('Directory')}</span></div>}>
+      <Tab eventKey={'directory'} title={<div><i className="fa fa-address-book" /> <span>{t('Directory')}</span></div>}>
         <DirectoryView {...this.props} />
       </Tab>
     )
@@ -58,7 +58,7 @@ class ContactsView extends Component {
   renderPersonalTab () {
     const { t, showPersonal } = this.props
     return showPersonal && (
-      <Tab eventKey={'personal'} title={<div><i className="fal fa-users-class" /> <span>{t('Personal')}</span></div>}>
+      <Tab eventKey={'personal'} title={<div><i className="fa fa-users-class" /> <span>{t('Personal')}</span></div>}>
         <PersonalView {...this.props} />
       </Tab>
     )
@@ -66,14 +66,14 @@ class ContactsView extends Component {
 
   renderTeamTab () {
     const { t } = this.props
-    return <Tab eventKey={'team'} title={<div><i className="fal fa-users" /> <span>{t('Team')}</span></div>}>
+    return <Tab eventKey={'team'} title={<div><i className="fa fa-users" /> <span>{t('Team')}</span></div>}>
       <TeamView {...this.props} />
     </Tab>
   }
 
   renderFavTab () {
     const { t } = this.props
-    return <Tab eventKey={'favorites'} title={<div><i className="fal fa-star" /> <span>{t('Favorites')}</span></div>}>
+    return <Tab eventKey={'favorites'} title={<div><i className="fa fa-star" /> <span>{t('Favorites')}</span></div>}>
       <FavoritesView {...this.props} />
     </Tab>
   }
